@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO ENCUESTA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">FORMULARIO ENCUESTA FREECODECAMP</h1>
+          <p id="description" class="description text-center">
+            Este  formulario se hace con el fin de conocer sus habilidades y conocimientos en lenguajes de programacion
+            por favor responda a las siguientes preguntas de forma sincera, y ingrese la informacion que se le solicita acontinuacion
+
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">NOMBRE Y APELLIDOS</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="INGRESE NOMBRE Y APELLIDOS"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="INGRESE SU EMAIL"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >EDAD<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="EDAD"
+            />
+          </div>
+          <div class="form-group">
+            <p>Lenguaje de programacion frontend que mas domina</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>SELECCIONE LENGUAJE</option>
+              <option value="student">JAVASCRIP</option>
+              <option value="job">CSS</option>
+              <option value="learner">HTML</option>
+              <option value="preferNo">PYTHON</option>
+              <option value="other">OTRO</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>EN QUE NIVEL CONSIDERA USTED QUE MANEJA DICHO LENGUAJE </p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />PRINCIPIANTE</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />INTERMEDIO</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />EXPERTO</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              CUANTA EXPERIENCIA EN AÑOS TIENE TRABAJANDO CON DICHO LENGUAJE
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Seleccione una opcion</option>
+              <option value="challenges">Menos de 1</option>
+              <option value="projects">De 1 a 2</option>
+              <option value="community">De 2 a 5</option>
+              <option value="openSource">Mas de 5</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              Empresas en las cuales le gustaria ingresar a laborar
+              <span class="clue">(Seleccione)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />GOOGLE</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />FACEBOOK</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />MICROSOFT</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />APPLE</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />BAIRESDEV</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />OTRA</label
+            >
+            
+          </div>
+      
+          <div class="form-group">
+            <p>SUGERENCIAS O INQUIETUDES QUE TENGA</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Ingreselas aqui"
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              ENVIAR
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
